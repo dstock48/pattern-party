@@ -1,37 +1,124 @@
 @media screen and (min-width: 500px) {
-  .accordian-tabs {
-    flex-direction: row;
-    position: relative;
-  }
 
   .section {
     width: 25%;
   }
-
   .content {
     display: none;
   }
-  
-  .accordian-tabs .tab-active ~.content {
+  .accordian-tabs .tab-active~.content {
     display: none;
   }
-
   .accordian-tabs {
-
+    flex-direction: row;
+    position: relative;
+    border: 0;
 
     .tab {
       justify-content: center;
+      border-bottom: 1px solid $mediumGray;
+
       .fa {
         display: none;
       }
     }
-
+    .tab-active {
+      border: none;
+      background-color: transparent;
+      border: 1px solid $mediumGray;
+      border-bottom: 0;
+      border-top: 2px solid $accentColor;
+    }
     .tab-active~.content.content-active {
       position: absolute;
       left: 0;
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
+      border: 1px solid $mediumGray;
+      border-top: 0;
+
+      img {
+        width: 300px;
+        height: 400px;
+        margin: 30px;
+      }
     }
   }
- 
 }
+
+@media screen and (min-width: 768px) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+
+    hr {
+      display: none;
+    }
+
+    .student-name {
+      font-size: 22px;
+    }
+  }
+
+  main {
+    padding: 20px 40px;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .section-title {
+      width: 320px;
+      text-align: left;
+      font-size: 24px;
+      margin: 0;
+    }
+
+    hr {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .accordian-tabs {
+    margin: 0 auto;
+    width: 90%;
+
+    .tab-active~.content.content-active {
+      flex-direction: row;
+    }
+
+    .text-content {
+      .content-heading {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1.2;
+      }
+  
+      p {
+        font-size: 14px;
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (min-width: 1100px) {
+  header {
+    padding: 20px 80px;
+  }
+  main {
+    padding: 20px 80px;
+  }
+}
+

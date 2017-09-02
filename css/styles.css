@@ -12,6 +12,15 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0; }
 
+.view-code-btn {
+  display: block;
+  border: 0;
+  width: 400px;
+  height: 50px;
+  background-color: #2F2235;
+  color: #fff;
+  margin: 0 auto; }
+
 header {
   display: flex;
   flex-direction: column;
@@ -39,10 +48,10 @@ main {
   padding: 20px; }
 
 .section-header {
+  margin-top: 30px;
   margin-bottom: 100px; }
 
 .section-title {
-  margin-top: 30px;
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
@@ -69,15 +78,18 @@ main {
     background-color: #F2F2F2;
     border: 1px solid #fff;
     transition: background-color 200ms; }
-    .accordian-tabs .tab:hover {
+    .accordian-tabs .tab:hover:not(.tab-active) {
       cursor: pointer;
       background-color: #34D1D1; }
     .accordian-tabs .tab .open-close {
       font-weight: 300; }
   .accordian-tabs .tab-active {
-    border-top: 1px solid #D1D2D3;
+    border-top: 2px solid #34D1D1;
     background-color: #fff;
     font-weight: 600; }
+    .accordian-tabs .tab-active .fa {
+      background-color: transparent;
+      border: 0; }
     .accordian-tabs .tab-active ~ .content {
       display: block; }
   .accordian-tabs .text-content {
@@ -87,17 +99,15 @@ main {
     line-height: 1.5; }
     .accordian-tabs .text-content .content-heading {
       margin: 0;
-      font-size: 24px;
+      font-size: 22px;
       line-height: 1.2; }
+    .accordian-tabs .text-content p {
+      font-size: 14px; }
     .accordian-tabs .text-content hr {
       width: 100%;
       margin-bottom: 20px; }
 
 @media screen and (min-width: 500px) {
-  .accordian-tabs {
-    flex-direction: row;
-    position: relative; }
-
   .section {
     width: 25%; }
 
@@ -107,14 +117,78 @@ main {
   .accordian-tabs .tab-active ~ .content {
     display: none; }
 
-  .accordian-tabs .tab {
-    justify-content: center; }
-    .accordian-tabs .tab .fa {
+  .accordian-tabs {
+    flex-direction: row;
+    position: relative;
+    border: 0; }
+    .accordian-tabs .tab {
+      justify-content: center;
+      border-bottom: 1px solid #D1D2D3; }
+      .accordian-tabs .tab .fa {
+        display: none; }
+    .accordian-tabs .tab-active {
+      border: none;
+      background-color: transparent;
+      border: 1px solid #D1D2D3;
+      border-bottom: 0;
+      border-top: 2px solid #34D1D1; }
+    .accordian-tabs .tab-active ~ .content.content-active {
+      position: absolute;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      border: 1px solid #D1D2D3;
+      border-top: 0; }
+      .accordian-tabs .tab-active ~ .content.content-active img {
+        width: 300px;
+        height: 400px;
+        margin: 30px; } }
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px; }
+    header hr {
       display: none; }
-  .accordian-tabs .tab-active ~ .content.content-active {
-    position: absolute;
-    left: 0;
-    display: block;
-    width: 100%; } }
+    header .student-name {
+      font-size: 22px; }
+
+  main {
+    padding: 20px 40px; }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .section-header .section-title {
+      width: 320px;
+      text-align: left;
+      font-size: 24px;
+      margin: 0; }
+    .section-header hr {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+
+  .accordian-tabs {
+    margin: 0 auto;
+    width: 90%; }
+    .accordian-tabs .tab-active ~ .content.content-active {
+      flex-direction: row; }
+    .accordian-tabs .text-content .content-heading {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.2; }
+    .accordian-tabs .text-content p {
+      font-size: 14px; } }
+@media screen and (min-width: 1100px) {
+  header {
+    padding: 20px 80px; }
+
+  main {
+    padding: 20px 80px; } }
 
 /*# sourceMappingURL=styles.css.map */
