@@ -1,0 +1,25 @@
+@media screen and (min-width: 500px) {
+  .accordian-tabs {
+    flex-direction: row;
+    position: relative; }
+
+  .section {
+    width: 25%; }
+
+  .content {
+    display: none; }
+
+  .accordian-tabs .tab-active ~ .content {
+    display: none; }
+
+  .accordian-tabs .tab {
+    justify-content: center; }
+    .accordian-tabs .tab .fa {
+      display: none; }
+  .accordian-tabs .tab-active ~ .content.content-active {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%; } }
+
+/*# sourceMappingURL=media-queries.css.map */
