@@ -22,11 +22,17 @@ body {
 .view-code-btn {
   display: block;
   border: 0;
-  width: 400px;
+  width: 100%;
   height: 50px;
   background-color: $primaryDark;
   color: #fff;
   margin: 0 auto;
+  transition: 200ms;
+  
+  &:hover {
+    cursor: pointer;
+    background-color: $primaryLight;
+  }
 }
 
 // HEADER  ///////////////////////////////
@@ -67,6 +73,7 @@ header {
 main {
   width: 100%;
   padding: 20px;
+  overflow: hidden;
 }
 
 .section-header {
@@ -83,6 +90,10 @@ main {
 
 // ACCORDIAN TABS  ///////////////////////
 //////////////////////////////////////////
+.accordian-tabs-section {
+  margin-bottom: 80px;
+}
+
 .accordian-tabs {
   display: flex;
   flex-direction: column;

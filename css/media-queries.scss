@@ -1,14 +1,13 @@
 @media screen and (min-width: 500px) {
 
+  .view-code-btn {
+    width: 400px;
+  }
+
   .section {
     width: 25%;
   }
-  .content {
-    display: none;
-  }
-  .accordian-tabs .tab-active~.content {
-    display: none;
-  }
+
   .accordian-tabs {
     flex-direction: row;
     position: relative;
@@ -21,6 +20,23 @@
       .fa {
         display: none;
       }
+
+      ~.content {
+       display: flex;
+       flex-direction: column;
+       width: 400%;
+
+       .text-content {
+         opacity: 0;
+       }
+
+       img {
+         width: 300px;
+         height: 400px;
+         margin: 30px;
+         opacity: 0;
+       }
+      }
     }
     .tab-active {
       border: none;
@@ -29,7 +45,7 @@
       border-bottom: 0;
       border-top: 2px solid $accentColor;
     }
-    .tab-active~.content.content-active {
+    .tab-active~.content {
       position: absolute;
       left: 0;
       display: flex;
@@ -43,6 +59,11 @@
         width: 300px;
         height: 400px;
         margin: 30px;
+        opacity: 1;
+      }
+
+      .text-content {
+        opacity: 1;
       }
     }
   }
@@ -92,6 +113,7 @@
     margin: 0 auto;
     width: 90%;
 
+    .tab~.content,
     .tab-active~.content.content-active {
       flex-direction: row;
     }
