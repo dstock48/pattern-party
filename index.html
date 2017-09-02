@@ -3,85 +3,90 @@
   <head>
     <meta charset="utf-8">
     <title>Pattern Party</title>
-    <link rel="stylesheet" href="/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://use.fontawesome.com/006bfd4f8a.js"></script>
   </head>
   <body>
     <header>
-      <p class="logo">pattern <span class="accent-color">party</span></p>
-      <hr class="mobile-divider">
-      <p class="name">David Weinstock</p>
+      <p class="logo">pattrn <span class="accent-color">party</span></p>
+      <hr class="divider">
+      <p class="student-name">David Weinstock</p>
     </header>
     <main>
-      <section class="accordian-tabs-container">
-        <div class="section-heading">
-          <span class="section-name">accordion tabs</span>
-          <hr class="desktop-divider">
-          <hr class="mobile-divider">
+      <section class="accordian-tabs-section">
+        <div class="section-header">
+          <h2 class="section-title">accordian tabs</h2>
+          <hr>
         </div>
 
         <div class="accordian-tabs">
-          <ul class="tab-container">
-            <li data-tabnum="1" class="tab tab-1 tab-active">Tab 1</li>
-            <li data-tabnum="2" class="tab tab-2">Tab 2</li>
-            <li data-tabnum="3" class="tab tab-3">Tab 3</li>
-            <li data-tabnum="4" class="tab tab-4">Tab 4</li>
-          </ul>
-          <div class="content content-1 content-active">
-            <div class="img-container">
-              <img src="/placeholder.png" alt="placeholder image">
+          
+          <div class="section-1">
+            <div class="tab tab-active">Tab 1
+              <i class="fa fa-minus" aria-hidden="true"></i>
             </div>
-            <div class="text">
-              <h2 class="content-title">1 - Lorem ipsum dolor sit amet, consectetur</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-          </div>
-          <div class="content content-2">
-            <div class="img-container">
-              <img src="/placeholder.png" alt="placeholder image">
-            </div>
-            <div class="text">
-              <h2 class="content-title">2 - Lorem ipsum dolor sit amet, consectetur</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-          </div>
-          <div class="content content-3">
-            <div class="img-container">
-              <img src="/placeholder.png" alt="placeholder image">
-            </div>
-            <div class="text">
-              <h2 class="content-title">3 - Lorem ipsum dolor sit amet, consectetur</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-          </div>
-          <div class="content content-4">
-            <div class="img-container">
-              <img src="/placeholder.png" alt="placeholder image">
-            </div>
-            <div class="text">
-              <h2 class="content-title">4 - Lorem ipsum dolor sit amet, consectetur</h2>
-              <hr>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="content">
+              <img src="assets/placeholder.png" alt="">
+              <div class="text-content">
+                <h3 class="content-heading">Coffee ipsum dolor sit amet, consectetur</h3>
+                <hr>
+                <p>Qui, robust cappuccino, iced breve milk instant decaffeinated turkish. That cinnamon aromatic sweet, barista body qui at americano. Flavour pumpkin spice, cultivar frappuccino iced cinnamon cream crema skinny. Iced robust eu body cream flavour, organic kopi-luwak spoon at brewed.</p>
+                <p>Con panna, id, french press cup brewed pumpkin spice breve shop coffee. Wings lungo dark medium cream, eu ristretto spoon brewed seasonal. Mug bar, barista bar mazagran variety, ut and froth so ut steamed. White robust, sit extra mug filter rich ristretto.</p>
+              </div>
             </div>
           </div>
 
+        <div class="section-2">
+          <div class="tab">Tab 2<i class="fa fa-plus" aria-hidden="true"></i></div>
+          <div class="content">
+            <img src="assets/placeholder.png" alt="">
+            <div class="text-content">
+              <h3 class="content-heading">Zombie ipsum dolor sit amet, consectetur</h3>
+              <hr>
+              <p>Zombies reversus ab inferno, nam malum cerebro. De carne animata corpora quaeritis. Summus sit​​, morbo vel maleficia? De Apocalypsi undead dictum mauris. Hi mortuis soulless creaturas, imo monstra adventus vultus comedat cerebella viventium.</p>
+              <p>Qui offenderit rapto, terribilem incessu. The voodoo sacerdos suscitat mortuos comedere carnem. Search for solum oculi eorum defunctis cerebro. Nescio an Undead zombies. Sicut malus movie horror.</p>
+            </div>
+          </div>
         </div>
-      </section>
 
-      <button>view code</button>
+        <div class="section-3">
+          <div class="tab">Tab 3<i class="fa fa-plus" aria-hidden="true"></i></div>
+          <div class="content">
+            <img src="assets/placeholder.png" alt="">
+            <div class="text-content">
+              <h3 class="content-heading">Samuel L. Ipsum dolor sit amet, consectetur</h3>
+              <hr>
+              <p>Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you. But I can't give you this case, it don't belong to me. Besides, I've already been through too much shit this morning over this case to hand it over to your dumb ass.</p>
+              <p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime. Do you believe that shit? It actually says that in the little book that comes with it: the most popular gun in American crime. Like they're actually proud of that shit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-4">
+          <div class="tab">Tab 4<i class="fa fa-plus" aria-hidden="true"></i></div>
+          <div class="content">
+            <img src="assets/placeholder.png" alt="">
+            <div class="text-content">
+              <h3 class="content-heading">Sagan ipsum dolor sit amet, consectetur</h3>
+              <hr>
+              <p>Tesseract, extraordinary claims require extraordinary evidence the carbon in our apple pies! How far away. Hypatia the ash of stellar alchemy the only home we've ever known Flatland a very small stage in a vast cosmic arena across the centuries a very small stage in a vast cosmic arena. Made in the interiors of collapsing stars.</p>
+              <p>Tingling of the spine, hydrogen atoms cosmos permanence of the stars quasar a still more glorious dawn awaits? Are creatures of the cosmos Apollonius of Perga how far away intelligent beings ship of the imagination, shores of the cosmic ocean Hypatia quasar across the centuries quasar the sky calls to us Sea of Tranquility.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+      </section>
 
     </main>
     <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
     crossorigin="anonymous"></script>
-    <script src="/main.js" charset="utf-8"></script>
+    <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>
