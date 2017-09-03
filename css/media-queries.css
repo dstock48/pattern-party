@@ -1,101 +1,108 @@
-/*
-Error: Undefined variable: "$mediumGray".
-        on line 18 of ./css/media-queries.scss
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@media screen and (min-width: 500px) {
+  .view-code-btn {
+    width: 400px; }
 
-13:     position: relative;
-14:     border: 0;
-15: 
-16:     .tab {
-17:       justify-content: center;
-18:       border-bottom: 1px solid $mediumGray;
-19: 
-20:       .fa {
-21:         display: none;
-22:       }
-23: 
+  .section {
+    width: 25%; }
 
-Backtrace:
-./css/media-queries.scss:18
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/script/tree/list_literal.rb:75:in `map'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `map'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:528:in `visit_media'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/Dave/.rvm/gems/ruby-2.3.1/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$mediumGray\".\A         on line 18 of ./css/media-queries.scss\A \A 13:     position: relative;\A 14:     border: 0;\A 15: \A 16:     .tab {\A 17:       justify-content: center;\A 18:       border-bottom: 1px solid $mediumGray;\A 19: \A 20:       .fa {\A 21:         display: none;\A 22:       }\A 23: "; }
+  .accordian-tabs {
+    flex-direction: row;
+    position: relative;
+    border: 0; }
+    .accordian-tabs .tab {
+      justify-content: center;
+      border-bottom: 1px solid #D1D2D3; }
+      .accordian-tabs .tab .fa {
+        display: none; }
+      .accordian-tabs .tab ~ .content {
+        display: flex;
+        flex-direction: column;
+        width: 400%; }
+        .accordian-tabs .tab ~ .content .text-content {
+          opacity: 0; }
+        .accordian-tabs .tab ~ .content img {
+          width: 300px;
+          height: 400px;
+          margin: 30px;
+          opacity: 0; }
+    .accordian-tabs .tab-active {
+      border: none;
+      background-color: transparent;
+      border: 1px solid #D1D2D3;
+      border-bottom: 0;
+      border-top: 2px solid #34D1D1; }
+    .accordian-tabs .tab-active ~ .content {
+      position: absolute;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      border: 1px solid #D1D2D3;
+      border-top: 0; }
+      .accordian-tabs .tab-active ~ .content img {
+        width: 300px;
+        height: 400px;
+        margin: 30px;
+        opacity: 1; }
+      .accordian-tabs .tab-active ~ .content .text-content {
+        opacity: 1; } }
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px; }
+    header hr {
+      display: none; }
+    header .student-name {
+      font-size: 22px; }
+
+  main {
+    padding: 20px 40px; }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .section-header .section-title {
+      width: 320px;
+      text-align: left;
+      font-size: 24px;
+      margin: 0; }
+    .section-header hr {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0; }
+
+  .accordian-tabs {
+    margin: 0 auto;
+    width: 90%; }
+    .accordian-tabs .tab ~ .content,
+    .accordian-tabs .tab-active ~ .content.content-active {
+      flex-direction: row; }
+    .accordian-tabs .text-content .content-heading {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.2; }
+    .accordian-tabs .text-content p {
+      font-size: 14px; }
+
+  .flexible-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px; }
+    .flexible-cards .card {
+      margin-bottom: 0; }
+    .flexible-cards .card-1 {
+      grid-column: 1 / span 2; }
+    .flexible-cards .card-7 {
+      grid-column: 2 / span 2; } }
+@media screen and (min-width: 1100px) {
+  header {
+    padding: 20px 80px; }
+
+  main {
+    padding: 20px 80px; } }
+
+/*# sourceMappingURL=media-queries.css.map */

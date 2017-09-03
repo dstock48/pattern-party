@@ -1,3 +1,5 @@
+@import "variables";
+
 @media screen and (min-width: 500px) {
 
   .view-code-btn {
@@ -132,6 +134,24 @@
     }
 
   }
+
+  .flexible-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+
+    .card {
+      margin-bottom: 0;
+    }
+    
+    .card-1 {
+      grid-column: 1 / span 2;
+    }
+    
+    .card-7 {
+      grid-column: 2 / span 2;
+    }
+  }
+
 
 }
 
