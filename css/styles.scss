@@ -26,7 +26,7 @@ body {
   height: 50px;
   background-color: $primaryDark;
   color: #fff;
-  margin: 0 auto;
+  margin: 60px auto 120px;
   transition: 200ms;
   
   &:hover {
@@ -90,9 +90,6 @@ main {
 
 // ACCORDIAN TABS  ///////////////////////
 //////////////////////////////////////////
-.accordian-tabs-section {
-  margin-bottom: 80px;
-}
 
 .accordian-tabs {
   display: flex;
