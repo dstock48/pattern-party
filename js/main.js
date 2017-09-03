@@ -1,4 +1,4 @@
-$('a').on('click', () => false);
+$('.header-bar a').on('click', () => false);
 
 $('.accordian-tabs').on('click', '.tab', (e) => {
   if ([...e.target.classList].includes('tab')) {
