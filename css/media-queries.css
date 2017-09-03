@@ -22,8 +22,8 @@
         .accordian-tabs .tab ~ .content .text-content {
           opacity: 0; }
         .accordian-tabs .tab ~ .content img {
-          width: 300px;
-          height: 400px;
+          width: 400px;
+          height: 300px;
           margin: 30px;
           opacity: 0; }
     .accordian-tabs .tab-active {
@@ -42,13 +42,19 @@
       border: 1px solid #D1D2D3;
       border-top: 0; }
       .accordian-tabs .tab-active ~ .content img {
-        width: 300px;
-        height: 400px;
+        width: 400px;
+        height: 300px;
         margin: 30px;
         opacity: 1; }
       .accordian-tabs .tab-active ~ .content .text-content {
         opacity: 1; } }
 @media screen and (min-width: 768px) {
+  .accordian-tabs,
+  .flexible-cards {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto; }
+
   header {
     display: flex;
     flex-direction: row;
@@ -76,33 +82,41 @@
       margin-left: 0;
       margin-right: 0; }
 
-  .accordian-tabs {
-    margin: 0 auto;
-    width: 90%; }
-    .accordian-tabs .tab ~ .content,
-    .accordian-tabs .tab-active ~ .content.content-active {
-      flex-direction: row; }
-    .accordian-tabs .text-content .content-heading {
-      margin: 0;
-      font-size: 22px;
-      line-height: 1.2; }
-    .accordian-tabs .text-content p {
-      font-size: 14px; }
+  .accordian-tabs .tab ~ .content,
+  .accordian-tabs .tab-active ~ .content.content-active {
+    flex-direction: row; }
+    .accordian-tabs .tab ~ .content img,
+    .accordian-tabs .tab-active ~ .content.content-active img {
+      width: 300px;
+      height: 400px; }
+  .accordian-tabs .text-content .content-heading {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.2; }
+  .accordian-tabs .text-content p {
+    font-size: 14px; }
 
   .flexible-cards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px; }
     .flexible-cards .card {
       margin-bottom: 0; }
-    .flexible-cards .card-1 {
-      grid-column: 1 / span 2; }
+      .flexible-cards .card .card-title {
+        font-size: 24px; }
     .flexible-cards .card-7 {
-      grid-column: 2 / span 2; } }
+      grid-column: 1 / span 2; } }
 @media screen and (min-width: 1100px) {
   header {
     padding: 20px 80px; }
 
   main {
-    padding: 20px 80px; } }
+    padding: 20px 80px; }
+
+  .flexible-cards {
+    grid-template-columns: 1fr 1fr 1fr; }
+    .flexible-cards .card-1 {
+      grid-column: 1 / span 2; }
+    .flexible-cards .card-7 {
+      grid-column: 2 / span 2; } }
 
 /*# sourceMappingURL=media-queries.css.map */
