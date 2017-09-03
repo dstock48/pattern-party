@@ -204,8 +204,93 @@ header {
       height: 300px;
     }
   }
+}
+
+// HEADER BAR  ///////////////////////////
+//////////////////////////////////////////
+
+.desktop-header {
+  display: none;
+}
 
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: $mediumGray;
+
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .menu-btn {
+    padding: 12px;
+    color: $darkGray;
+    font-size: 22px;
+    font-weight: 300;
+    transition: 200ms;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.08);
+      background-color: $accentColor;
+      color: #fff;
+    }
+  }
+}
+
+.dropdown {
+  background-color: $lightGray;
+
+  &.hidden {
+    display: none;
+  }
+}
+
+.nav-link {
+  display: block;
+  color: $darkGray;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 20px;
+  transition: 200ms;
+  
+  &:hover {
+    color: #fff;
+    background-color: $accentColor;
+  }
+}
+
+.search-bar {
+  position: relative;
+  padding: 10px;
+  
+  .fa-search {
+    font-size: 22px;
+    color: $darkGray;
+    position: absolute;
+    top: 24px;
+    left: 23px;
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    padding-left: 45px;
+    border: 2px solid $darkGray;
+    font-size: 22px;
+    font-family: $defaultFont;
+    outline: none;
+    transition: 200ms;
+
+    &:focus {
+      border-color: $accentColor;
+    }
+  }
 }
 
 

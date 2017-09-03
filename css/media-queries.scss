@@ -74,8 +74,9 @@
 @media screen and (min-width: 768px) {
 
   .accordian-tabs, 
-  .flexible-cards {
-    width: 90%;
+  .flexible-cards,
+  .header-bar {
+    width: 95%;
     max-width: 1400px;
     margin: 0 auto;
   }
@@ -162,6 +163,46 @@
       grid-column: 1 / span 2;
     }
     
+  }
+
+  .header-bar {
+
+    .mobile-header {
+      display: none;
+    }
+
+    .desktop-header {
+      display: block;
+
+      .header {
+        justify-content: flex-start;
+      }
+
+      .nav-links {
+        display: flex;
+      }
+
+      .nav-link {
+        display: inline-block;
+      }
+
+      .search-bar {
+        margin-left: auto;
+
+        input {
+          width: 140px;
+          border: 2px solid $darkGray;
+
+          &:focus {
+            border-color: $accentColor;
+          }
+
+          &.expanded {
+            width: 300px;
+          }
+        }
+      }
+    }
   }
   
   
